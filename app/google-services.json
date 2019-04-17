@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "346539770713",
+    "firebase_url": "https://plantopia-e8382.firebaseio.com",
+    "project_id": "plantopia-e8382",
+    "storage_bucket": "plantopia-e8382.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:346539770713:android:498059d9236720ea",
+        "android_client_info": {
+          "package_name": "com.plantopia.plantopia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "346539770713-3qfi824n21284b833nke993ckp1gdjjj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.plantopia.plantopia",
+            "certificate_hash": "e2ef23e70b42e99a6e21d357873477bf4e0d592d"
+          }
+        },
+        {
+          "client_id": "346539770713-a38iqht2u6vho27t9sd4fjopjfr689f4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKqCA-0q2Z8xYoIb15hkGnS-99IaNaI10"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "346539770713-a38iqht2u6vho27t9sd4fjopjfr689f4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

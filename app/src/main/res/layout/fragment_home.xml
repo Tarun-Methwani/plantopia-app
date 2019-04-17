@@ -12,7 +12,7 @@
         android:layout_height="99dp"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="120dp"
-        android:background="@drawable/cameraa" />
+        android:background="@drawable/upload_image" />
 
     <Button
         android:id="@+id/btn_choose"

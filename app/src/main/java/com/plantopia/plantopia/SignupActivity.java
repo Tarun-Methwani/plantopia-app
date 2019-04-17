@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Patterns;
 import android.view.View;
+import android.view.Window;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
@@ -35,8 +36,8 @@ public class SignupActivity extends AppCompatActivity {
 
         etEmailSign=(EditText)findViewById(R.id.etEmailSign);
         etPasswordSign=(EditText)findViewById(R.id.etPasswordSign);
-        tvEmailSign=(TextView)findViewById(R.id.tvEmailSign);
-        tvPasswordSign=(TextView)findViewById(R.id.tvPasswordSign);
+        //tvEmailSign=(TextView)findViewById(R.id.tvEmailSign);
+        //tvPasswordSign=(TextView)findViewById(R.id.tvPasswordSign);
         btnCreateAccount=(Button)findViewById(R.id.btnCreateAccount);
         pbCreate=(ProgressBar)findViewById(R.id.pbCreate);
         pbCreate.setVisibility(View.GONE);

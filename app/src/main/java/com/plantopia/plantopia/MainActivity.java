@@ -36,8 +36,8 @@ public class MainActivity extends AppCompatActivity {
 
         etEmail=(EditText)findViewById(R.id.etEmail);
         etPassword=(EditText)findViewById(R.id.etPassword);
-        tvEmail=(TextView)findViewById(R.id.tvEmail);
-        tvPassword=(TextView)findViewById(R.id.tvPassword);
+       // tvEmail=(TextView)findViewById(R.id.tvEmail);
+        //tvPassword=(TextView)findViewById(R.id.tvPassword);
         tvForgetPassword=(TextView)findViewById(R.id.tvForgetPassword);
         tvCreateAccount=(TextView)findViewById(R.id.tvCreateAccount);
         btnLogin=(Button)findViewById(R.id.btnLogin);

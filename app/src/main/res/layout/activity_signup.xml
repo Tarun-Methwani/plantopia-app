@@ -1,82 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_signup"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.plantopia.plantopia.SignupActivity">
+    tools:context="com.plantopia.plantopia.SignupActivity"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/back">
 
-    <TextView
-        android:id="@+id/tvEmailSign"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginLeft="29dp"
-        android:layout_marginStart="29dp"
-        android:layout_marginTop="28dp"
-        android:text="Email" />
+        android:orientation="vertical"
+        android:paddingLeft="24dp"
+        android:paddingTop="56dp"
+        android:paddingRight="24dp">
 
-    <EditText
-        android:id="@+id/etEmailSign"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/tvEmailSign"
-        android:layout_alignStart="@+id/tvEmailSign"
-        android:layout_below="@+id/tvEmailSign"
-        android:layout_marginTop="12dp"
-        android:background="@drawable/edit_login"
-        android:drawableLeft="@drawable/ic_account_circle_black_24dp"
-        android:drawablePadding="5dp"
-        android:ems="10"
-        android:hint="eg:xyx@gmail.com"
-        android:inputType="textEmailAddress"
-        android:paddingLeft="10dp"
-        android:textColor="@color/colorPrimary" />
+        <!-- Email Label -->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
 
-    <TextView
-        android:id="@+id/tvPasswordSign"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/etEmailSign"
-        android:layout_alignStart="@+id/etEmailSign"
-        android:layout_below="@+id/etEmailSign"
-        android:layout_marginTop="14dp"
-        android:text="Create Password" />
+            <EditText
+                android:id="@+id/etEmailSign"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:inputType="textEmailAddress" />
+        </android.support.design.widget.TextInputLayout>
 
-    <EditText
-        android:id="@+id/etPasswordSign"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/tvPasswordSign"
-        android:layout_alignStart="@+id/tvPasswordSign"
-        android:layout_below="@+id/tvPasswordSign"
-        android:layout_marginTop="15dp"
-        android:background="@drawable/edit_login"
-        android:drawableLeft="@drawable/lock"
-        android:drawablePadding="5dp"
-        android:ems="10"
-        android:inputType="textPassword"
-        android:paddingLeft="10dp"
-        android:text=""
-        android:textColor="@color/colorPrimary" />
+        <!-- Password Label -->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
 
-    <Button
-        android:id="@+id/btnCreateAccount"
-        android:layout_width="145dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/etPasswordSign"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="25dp"
-        android:background="@drawable/btn_login"
-        android:text="Create Account" />
+            <EditText
+                android:id="@+id/etPasswordSign"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:inputType="textPassword" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btnCreateAccount"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:padding="12dp"
+            android:background="@drawable/btn_login"
+            android:text="Create Account" />
+
+    </LinearLayout>
 
     <ProgressBar
         android:id="@+id/pbCreate"
         style="?android:attr/progressBarStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/etEmailSign"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="121dp" />
+
 </RelativeLayout>

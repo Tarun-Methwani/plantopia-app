@@ -5,73 +5,64 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/back"
     tools:context="com.plantopia.plantopia.MainActivity">
 
-
-    <TextView
-        android:id="@+id/tvEmail"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginLeft="30dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="21dp"
-        android:text="Email" />
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="42dp"
+        android:orientation="vertical"
+        android:paddingLeft="24dp"
+        android:paddingTop="56dp"
+        android:paddingRight="24dp">
 
-    <EditText
-        android:id="@+id/etEmail"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/tvEmail"
-        android:layout_alignStart="@+id/tvEmail"
-        android:layout_below="@+id/tvEmail"
-        android:layout_marginTop="13dp"
-        android:background="@drawable/edit_login"
-        android:drawableLeft="@drawable/ic_account_circle_black_24dp"
-        android:drawablePadding="5dp"
-        android:ems="10"
-        android:hint="eg:abc@gmail.com"
-        android:inputType="textEmailAddress"
-        android:paddingLeft="10dp"
-        android:textColor="@color/colorPrimaryDark" />
+        <!-- Email Label -->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
 
-    <TextView
-        android:id="@+id/tvPassword"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/etEmail"
-        android:layout_alignStart="@+id/etEmail"
-        android:layout_below="@+id/etEmail"
-        android:layout_marginTop="17dp"
-        android:text="Password" />
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:inputType="textEmailAddress" />
+        </android.support.design.widget.TextInputLayout>
 
-    <EditText
-        android:id="@+id/etPassword"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/tvPassword"
-        android:layout_alignStart="@+id/tvPassword"
-        android:layout_below="@+id/tvPassword"
-        android:layout_marginTop="12dp"
-        android:background="@drawable/edit_login"
-        android:drawableLeft="@drawable/lock"
-        android:drawablePadding="5dp"
+        <!-- Password Label -->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
 
-        android:ems="10"
-        android:hint="enter password"
-        android:inputType="textPassword"
-        android:paddingLeft="10dp"
-        android:text=""
-        android:textColor="@color/colorPrimaryDark" />
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:inputType="textPassword" />
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
 
     <TextView
         android:id="@+id/tvForgetPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/etPassword"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="22dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="242dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginRight="18dp"
         android:text="Forget Password?"
         android:textColor="@color/colorPrimary" />
 
@@ -80,8 +71,11 @@
         android:layout_width="150dp"
         android:layout_height="35dp"
         android:layout_below="@+id/tvForgetPassword"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="22dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="-12dp"
         android:background="@drawable/btn_login"
         android:text="Login" />
 
@@ -102,7 +96,9 @@
         style="?android:attr/progressBarStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/etEmail"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="118dp"
+        android:layout_toStartOf="@+id/tvForgetPassword" />
 
 </RelativeLayout>

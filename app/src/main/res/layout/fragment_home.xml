@@ -21,7 +21,7 @@
         android:layout_gravity="center_vertical|center_horizontal"
         android:layout_marginTop="200dp"
         android:layout_marginBottom="120dp"
-        android:background="@drawable/uploadd" />
+        android:background="@drawable/upload_store" />
 
 
 
